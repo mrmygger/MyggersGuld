@@ -1,0 +1,278 @@
+/* colors: */
+
+.darkBlue {
+    background-color:  #92CAE9;
+}
+
+.lightBlue{
+    background-color: #F4FBFF;
+}
+
+.priceColor { 
+    background-color: #739DB4; 
+}
+
+.goldColor {
+    background-color: #FEFFB9;
+}
+
+.white {
+    background-color: white;
+}
+
+body {
+    position: relative;
+    width: 375px;
+    font-family: 'Caveat', cursive;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+}
+
+
+header {
+    animation-timing-function: ease-out;
+}
+/* mainHeader */
+#mainHeader img {
+    width: 47.64px;
+    height: 47px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin: auto auto;
+}
+
+#mainHeader h1 {
+    font-size: 38px;
+    margin: auto auto;
+}
+
+.whiteText {
+    color: white; 
+}
+
+.goldText {
+    color: #FEFFB9;
+    animation-name: pulseGold;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulseGold {
+    0% {text-shadow: 0;}
+    50% {text-shadow: 0px 0px 20px yellow;}
+    100% {text-shadow: 0;}
+}
+
+#mainHeader {
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    height: 88px;
+}
+
+/* cartCounter */
+#cartCounter {
+    margin: auto auto;
+}
+
+#cartCounter img {
+    width: 42px;
+    height: 42px;
+ 
+}
+
+#cartCounter p{
+    position: absolute;
+    right: 2px;
+    top: 0;
+    border-radius: 20px;
+    background-color: #CECDCD;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1px 5px;
+    font-weight: bold;
+    color: white;
+}
+
+/* secundaryHeader */
+#secundaryHeader {
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    margin-top: 8px;
+    margin-bottom: 17px;
+}
+
+#secundaryHeader h2 {
+    font-size: 33px;
+    margin: auto auto;
+}
+
+#secundaryHeader img {
+    width: 25px;
+    height: 25px;
+    margin: auto auto;
+}
+
+
+.contentBox img {
+    width: 375px;
+    height: 443px;
+    animation-name: flyUp;
+    animation-duration: 3s;
+} 
+
+@keyframes flyUp {
+    from {margin-top: 200px;}
+    to {margin-top: 0;}
+
+}
+
+/* cardSheet */
+.cardSheet h3 {
+    font-size: 33px;
+    text-align: center;
+}
+
+.cardSheet {
+    padding: 0;
+    width: 355px;
+    border-radius: 10px;
+    margin: 0 auto
+}
+
+/* itemInfo */
+.itemInfo p:first-child {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.itemInfo p:last-child {
+    font-weight: normal;
+    font-size: 18px;
+    margin: 0;
+}
+
+.itemInfo p {
+    padding: 0 15px;
+}
+
+/* productPlacement */
+.productPlacement {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    margin-left: 10px;
+}
+
+.productPlacement img{
+    width: 70px;
+    height: 70px;
+    padding: 5%;
+}
+
+.smallPicSize img{
+    width: 56px;
+    height: 53px;
+    margin: 11%;
+}
+
+.productPlacement p:nth-child(3) {
+    font-weight: bold;
+    font-size: 31px;
+    color: white;
+    margin: 0;
+    margin-left: 55%;
+    margin-top: -18px;
+    align-self: self-end;
+    border-radius: 5px;
+    padding-right: 5px;
+    grid-column-start: 2;
+    width: fit-content;
+    padding-left: 7px;
+}
+
+.cirkel {
+    height: 80px;
+    width: 80px; 
+    background-color:#FEFFB9;
+    border-radius: 40px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* offer */
+.offer {
+    display: flex; 
+    flex-direction: column;
+    margin: 30px auto;
+    width: 355px;
+    padding: 22px 0;
+    border-radius: 10px;
+}
+
+.offer img {
+    width: 197px;
+    height: 141px;
+    margin: 0 auto;
+}
+
+.offer h3 {
+    font-weight: bold;
+    font-size: 47px;
+    margin: 0 auto;
+}
+
+/* actionButton */
+.actionButton {
+    width: 137px;
+    height: 48px;
+    font-weight: bold;
+    font-size: 33px;
+    font-family: 'Caveat', cursive;
+    margin: 17px 0px 0px 203px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* footer */
+
+footer {
+    display: grid; 
+    grid-template-columns: 1fr;
+    height: 252px;
+}
+
+footer p {
+    text-align: center;
+}
+
+#soMe {
+    margin: 25px auto;
+    display: flex;
+}
+
+#soMe img {
+    width: 45.19px;
+    height: 46.16px;
+    margin: 18px;
+}
+
+#soMe .cirkel {
+    margin: 0 15px
+}
+
+#payment {
+    margin: 0 auto;
+}
+
+#payment img{
+    width: 62px;
+    height: 62.31px;
+    margin: 0 7px;
+}
+
+
+
+
+
